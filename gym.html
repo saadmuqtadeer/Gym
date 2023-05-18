@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad GYM</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/gym.css">
+    <style>
+
+        /* reset body */
+        body{
+            padding:0px;
+            margin: 0px;
+            background-image: url(img/abs-1850926_1920.jpg);
+            color: white;
+            font-family: fantasy;
+            /* height: 3742px; */
+        }
+
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 34px;
+            top: 20px;
+        }
+        
+        .left img{
+            width: 100px;
+            /* filter: invert(100%); */
+        }
+
+        .left div{
+            text-align: center;
+        }
+
+        .mid{
+            display: block;
+            width: 50%;
+            margin: 40px auto;
+            /* border: 2px solid green;
+            border-radius: 8%; */
+        }
+        .right{
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+        }
+
+        .navbar{
+            display: inline;
+        }
+        .navbar li{
+            display: inline;
+            font-size: 25px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover, .navbar li a:active{
+            text-decoration: underline;
+            color: gray;
+        }
+
+        .btn{
+            font-family: cursive;
+            font-size: 19px;
+            margin: 10px;
+            padding: 4px;
+            background-color: transparent;
+            color: white;
+            cursor: pointer;
+            border: 2px solid gray;
+
+        }
+        .btn:hover{
+            background-color: gray;
+            text-align: center;
+        }
+
+        .container{
+            text-align: center;
+            padding: 50px;
+            width: 33%;
+            margin: 106px 80px;
+            border: 2px solid white;
+            border-radius: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        
+        .groupc{
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="left">
+            <img src="img/gym-1048852_1280.png" alt="">
+            <div>saad's GYM</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Trainer</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Login</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of HYDERABAD Now</h1>
+        <form action="noaction.php">
+            <div class = "groupc">Name:<input type="text" name="" placeholder="Enter your Name"></div>
+            <div class = "groupc">Phone no:<input type="number" placeholder="Enter your phone no" ></div>
+            <div class = "groupc">Address:<input type="text" placeholder="Enter your Address" ></div>
+            <div class = "groupc">Age:<input type="number" placeholder="Enter your age" ></div>
+            <!-- <div class = "groupc">Gender: <input type="radio"> Male <input type="radio">Female</div> -->
+            <div class="groupc"><label for="gender">Gender:</label>
+                <select name="gender">
+                  <option value="">Please select one</option>
+                  <option value="female">Female</option>
+                  <option value="male">Male</option>
+                  <option value="non-binary">Non-Binary</option>
+                  <option value="other">Other</option>
+                  <option value="Prefer not to answer">Perfer not to Answer</option>
+                </select>
+                </div>
+        </form><br>
+        <button class="btn">Submit</button>
+    </div>
+    
+</body>
+</html>
